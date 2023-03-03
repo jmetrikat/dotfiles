@@ -1,0 +1,103 @@
+#==============
+# Taps
+#==============
+tap "buo/cask-upgrade"
+tap "homebrew/autoupdate"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "yt-dlp/taps"
+
+#==============
+# Set arguments for all installation commands
+#==============
+cask_args appdir: "/Applications", require_sha: true
+
+#==============
+# Formulae
+#==============
+brew "ansible"
+brew "cmake"
+brew "curl"
+brew "exa"
+brew "exiftool"
+brew "fish"
+brew "gnupg"
+brew "go"
+brew "htop"
+brew "imagemagick"
+brew "java"
+brew "lazydocker"
+brew "md5deep"
+brew "media-info"
+brew "neovim"
+brew "node"
+brew "npm"
+brew "nvm"
+brew "python"
+brew "neofetch"
+brew "pinentry-mac"
+brew "rclone"
+brew "rsync"
+brew "rust"
+brew "smartmontools"
+brew "starship"
+brew "stow"
+brew "tmux"
+brew "wget"
+brew "yarn"
+brew "yt-dlp"
+
+#==============
+# Casks
+#==============
+# cask "bitwarden"
+cask "brave-browser"
+cask "discord"
+cask "docker"
+cask "font-fira-code-nerd-font"
+cask "github"
+cask "gitkraken"
+cask "iterm2"
+cask "ledger-live"
+cask "little-snitch"
+cask "macfuse"
+cask "netnewswire"
+cask "obsidian"
+cask "onlyoffice"
+cask "pycharm-ce"
+# cask "raycast"
+cask "signal"
+cask "slack"
+cask "standard-notes"
+cask "termius"
+cask "tor-browser"
+cask "zoom"
+
+#==============
+# Casks by Objective-See
+#==============
+# cask "blockblock"
+# cask "dhs"
+# cask "do-not-disturb"
+# cask "knockknock"
+# cask "lulu"
+# cask "netiquette"
+# cask "oversight"
+# cask "ransomwhere"
+# cask "reikey"
+
+#==============
+# App Store
+#==============
+# Bitwarden
+# Excel
+# Infuse
+# NextDNS
+# OneDrive
+# Raivo-OTP
+# Tailscale
+# PowerPoint
+# Word
+# Yubico Autheticator

@@ -23,7 +23,10 @@ SYMLINKS=()
 ln -sf ~/Code/jmetrikat/dotfiles/gnupg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 SYMLINKS+=('.gnupg/gpg-agent.conf')
 
-ln -sf ~/Code/jmetrikat/dotfiles/homebrew/Brewfile ~/.Brewfile
+ln -sf ~/Code/jmetrikat/dotfiles/goto/.config/goto ~/.config/goto
+SYMLINKS+=('.config/goto')
+
+ln -sf ~/Code/jmetrikat/dotfiles/homebrew/Brewfile ~/Brewfile
 SYMLINKS+=('.brewfile')
 
 ln -sf ~/Code/jmetrikat/dotfiles/neofetch/.config/neofetch ~/.config/
@@ -62,5 +65,5 @@ cd -
 #==============
 # Done
 #==============
-echo "\n====== All Done!! ======"
+echo "\n====== All Done ======"
 echo "Enjoy!"

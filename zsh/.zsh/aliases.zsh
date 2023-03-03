@@ -17,6 +17,7 @@ alias ofd='open $PWD'
 alias c="clear"
 alias h="history"
 alias r='source ~/.zshrc'
+alias g='goto'
 
 #==============
 # exa shortcuts
@@ -64,7 +65,7 @@ alias bubu="brew update && brew upgrade"
 alias bl="brew list"
 alias bo="brew outdated"
 alias bs="brew search"
-alias bi="brew info"
+alias bf="brew info"
 alias bi="brew install"
 alias bu="brew uninstall"
 alias ba="brew autoremove"
@@ -87,7 +88,7 @@ fi
 #==============
 # git shortcuts
 #==============
-alias g='git'
+# alias g='git'
 alias ga='git add'
 alias gco='git checkout'
 alias gcmsg='git commit -m'

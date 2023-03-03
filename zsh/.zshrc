@@ -2,6 +2,7 @@
 [[ -f ~/.zsh/functions.zsh ]] && source ~/.zsh/functions.zsh
 [[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
 [[ -f ~/.zsh/nvm.zsh ]] && source ~/.zsh/nvm.zsh
+#[[ -f ~/.zsh/goto.zsh ]] && source ~/.zsh/goto.zsh
 
 # Use Oh-My-Zsh
 # [[ -f ~/.zsh/omz.zsh ]] && source ~/.zsh/omz.zsh

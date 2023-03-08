@@ -6,19 +6,28 @@ echo "====== Starting setup ======"
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # brew doctor
 # brew update
+sleep .5
 
 #==============
 # Remove old dotflies
 #==============
-#TODO
-
-rm -rf ~/.config/nvim
-rm -rf ~/.warp
-rm -rf ~/.zsh
+echo "\n====== Removing old dotfiles ======"
+rm ~/.gnupg/gpg-agent.conf
+rm ~/.config/goto
+rm ~/.config/neofetch
+rm ~/.config/nvim
+rm ~/.config/starship.toml
+rm ~/.tmux.conf
+rm ~/.warp
+rm ~/.zsh
+rm ~/.zshrc
+rm ~/.zshenv
+sleep .5
 
 #==============
 # Create symlinks in the home folder
 #==============
+echo "\n====== Creating symlinks ======"
 SYMLINKS=()
 ln -sf ~/Code/jmetrikat/dotfiles/gnupg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 SYMLINKS+=('.gnupg/gpg-agent.conf')
@@ -46,14 +55,16 @@ SYMLINKS+=('.warp')
 
 ln -sf ~/Code/jmetrikat/dotfiles/zsh/.zsh ~/.zsh
 SYMLINKS+=('.zsh')
+
 ln -sf ~/Code/jmetrikat/dotfiles/zsh/.zshrc ~/.zshrc
 SYMLINKS+=('.zshrc')
+
 ln -sf ~/Code/jmetrikat/dotfiles/zsh/.zshenv ~/.zshenv
 SYMLINKS+=('.zshenv')
 
-echo "\n====== Created symlinks ======"
 echo ${SYMLINKS[@]}
 echo
+
 
 #==============
 # Install tools specified in brewfile
@@ -61,6 +72,7 @@ echo
 cd ~
 brew bundle
 cd -
+sleep .5
 
 #==============
 # Done

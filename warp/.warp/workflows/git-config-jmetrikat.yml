@@ -1,0 +1,27 @@
+---
+name: "Configure git repository for @jmetrikat"
+command: |-
+  git config user.name "{{name}}"
+  git config user.email "{{email}}"
+  git config user.signingkey {{signingkey}}
+  git config commit.gpgsign {{gpgsign}}
+tags:
+  - git
+description: "Configure git repository for @jmetrikat"
+arguments:
+    - name: name
+      description: The user name used for commits.
+      default_value: Jannis Metrikat
+    - name: email
+      description: The user email used for commits.
+      default_value: 120120832+jmetrikat@users.noreply.github.com
+    - name: signingkey
+      description: The key used for signing commits.
+      default_value: B223CAC5AAF85615
+    - name: gpgsign
+      description: Whether to sign commits with gpg.
+      default_value: true
+source_url: "https://github.com/jmetrikat/dotfiles"
+author: Jannis Metrikat
+author_url: "https://github.com/jmetrikat"
+shells: []

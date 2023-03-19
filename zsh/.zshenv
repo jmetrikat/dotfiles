@@ -13,17 +13,14 @@ export NVM_DIR="$HOME/.nvm"
 
 # Use tools installed by homebrew instead of OS defaults
 export PATH="/usr/local/bin:$PATH"
-export PATH="/opt/homebrew/bin:$PATH"
-
-# Set PATH for Python 3.9
-export PATH='/Users/jmetrikat/Library/Python/3.9/bin'
-
-# Set PATH for openjdk@11
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+export PATH="/opt/homebrew/sbin:$PATH"
 
 # Set PATH, MANPATH, etc., for Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Set PATH for openjdk@11
+export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
 
 # Disable shell session recording
 export SHELL_SESSIONS_DISABLE=1

@@ -1,8 +1,9 @@
-[[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
-[[ -f ~/.zsh/functions.zsh ]] && source ~/.zsh/functions.zsh
-[[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
-[[ -f ~/.zsh/nvm.zsh ]] && source ~/.zsh/nvm.zsh
-[[ -f ~/.zsh/goto.zsh ]] && source ~/.zsh/goto.zsh
+# Load aliases and functions
+if [ -d "$HOME/.zsh" ]; then
+  for file in $HOME/.zsh/*.zsh; do
+    source $file
+  done
+fi
 
 # Load Starship
 eval "$(starship init zsh)"
@@ -11,5 +12,9 @@ eval "$(starship init zsh)"
 ssh-add -A 2>/dev/null;
 
 # Use tools installed by homebrew instead of OS defaults
-# .zshenv did not work for brew doctor
 export PATH="/opt/homebrew/bin:$PATH"
+
+# Set PATH and FLAGS for llvm
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"

@@ -22,6 +22,10 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
 
+# Set FLAGS for curl
+export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
+
 # Disable shell session recording
 export SHELL_SESSIONS_DISABLE=1
 

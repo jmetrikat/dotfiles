@@ -18,3 +18,6 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+
+# Set PATH for curl
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"

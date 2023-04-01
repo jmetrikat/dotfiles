@@ -101,6 +101,12 @@ alias grh='git reset'
 alias gst='git status'
 
 #==============
+# code shortcuts
+#==============
+alias m='make'
+alias mc='make clean'
+
+#==============
 # update shortcuts
 #==============
 alias global_update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g" # sudo gem update --system; sudo gem update; sudo gem cleanup

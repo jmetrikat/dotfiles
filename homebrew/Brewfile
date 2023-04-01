@@ -48,6 +48,7 @@ brew "smartmontools"
 brew "starship"
 brew "stow"
 brew "tmux"
+brew "tree"
 brew "wget"
 brew "yarn"
 brew "yt-dlp"
@@ -55,7 +56,6 @@ brew "yt-dlp"
 #==============
 # Casks
 #==============
-# cask "bitwarden"
 cask "brave-browser"
 cask "discord"
 cask "docker"

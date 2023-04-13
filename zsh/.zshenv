@@ -15,12 +15,12 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 
-# Set PATH, MANPATH, etc., for Homebrew.
+# Set PATH, MANPATH, etc. for Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Set PATH for openjdk@11
-export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
-export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 
 # Set FLAGS for curl
 export LDFLAGS="-L/opt/homebrew/opt/curl/lib"

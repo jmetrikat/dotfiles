@@ -17,7 +17,12 @@ function pfd() {
 EOF
 }
 
-#
+# Fetch public IP address and location
 function ipp() {
   curl ipinfo.io/ip && echo && curl ipinfo.io/city && curl ipinfo.io/region && curl ipinfo.io/country
+}
+
+# Rename all filenames in the current directory to lowercase
+function lower() {
+  for f in *; do mv "$f" "$f.tmp"; mv "$f.tmp" "`echo $f | tr "[:upper:]" "[:lower:]"`"; done
 }

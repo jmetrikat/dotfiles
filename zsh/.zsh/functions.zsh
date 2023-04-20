@@ -23,6 +23,15 @@ function ipp() {
 }
 
 # Rename all filenames in the current directory to lowercase
-function lower() {
+function tolower() {
   for f in *; do mv "$f" "$f.tmp"; mv "$f.tmp" "`echo $f | tr "[:upper:]" "[:lower:]"`"; done
+}
+
+# Replace spaces with hyphens
+function todash() {
+  for f in *; do mv "$f" "$f.tmp"; mv "$f.tmp" "`echo $f | tr "[:upper:]" "[:lower:]" | tr " " "-"`"; done
+}
+
+function told() {
+  tolower && todash
 }

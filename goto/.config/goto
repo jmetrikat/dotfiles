@@ -1,5 +1,6 @@
 aoc /Users/jmetrikat/Code/jmetrikat/advent-of-code
-any /Users/jmetrikat/Code/jmetrikat/anytype
+any /Users/jmetrikat/Code/local/anytype
+code /Users/jmetrikat/Code/jmetrikat
 dotfiles /Users/jmetrikat/Code/jmetrikat/dotfiles
 github-stats /Users/jmetrikat/Code/jmetrikat/github-stats
 jmetrikat /Users/jmetrikat/Code/jmetrikat/jmetrikat
@@ -7,5 +8,6 @@ home /Users/jmetrikat
 ltc /Users/jmetrikat/Code/jmetrikat/learn-to-code
 pt1 /Users/jmetrikat/Code/jmetrikat/pt1-ws22
 pt2 /Users/jmetrikat/Code/jmetrikat/pt2-ss23
+scripts /Users/jmetrikat/Code/jmetrikat/scripts
 clang /Users/jmetrikat/Code/jmetrikat/the-c-language
 vscode /Users/jmetrikat/Code/jmetrikat/vscode-config

@@ -56,6 +56,7 @@ brew "yt-dlp"
 #==============
 # Casks
 #==============
+cask "balenaetcher"
 cask "brave-browser"
 cask "discord"
 cask "docker"

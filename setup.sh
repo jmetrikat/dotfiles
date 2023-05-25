@@ -29,7 +29,7 @@ sleep .5
 #==============
 echo "\n====== Creating symlinks ======"
 SYMLINKS=()
-ln -sf ~/Code/jmetrikat/dotfiles/gnupg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
+ln -sf ~/Code/jmetrikat/dotfiles/gnupg/.gnupg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 SYMLINKS+=('.gnupg/gpg-agent.conf')
 
 ln -sf ~/Code/jmetrikat/dotfiles/goto/.config/goto ~/.config/goto
@@ -72,6 +72,7 @@ echo
 cd ~
 brew bundle
 cd -
+rm ~/Brewfile.lock.json
 sleep .5
 
 #==============

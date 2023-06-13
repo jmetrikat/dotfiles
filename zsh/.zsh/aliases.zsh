@@ -57,21 +57,38 @@ alias ,,='cd ..'
 alias ,,,='cd'
 
 #==============
-# brew shortcuts
+# package manager shortcuts
 #==============
-alias bup="brew update"
-alias bug="brew upgrade"
-alias bubu="brew update && brew upgrade"
-alias bl="brew list"
-alias bo="brew outdated"
-alias bs="brew search"
-alias bf="brew info"
-alias bi="brew install"
-alias bu="brew uninstall"
-alias ba="brew autoremove"
-alias bd="brew doctor"
-alias bc="brew cleanup --prune=all"
-alias bb="brew bundle"
+case "$OSTYPE" in
+  darwin*)
+    alias bup="brew update"
+    alias bug="brew upgrade"
+    alias bubu="brew update && brew upgrade"
+    alias bl="brew list"
+    alias bo="brew outdated"
+    alias bs="brew search"
+    alias bf="brew info"
+    alias bi="brew install"
+    alias bu="brew uninstall"
+    alias ba="brew autoremove"
+    alias bd="brew doctor"
+    alias bc="brew cleanup --prune=all"
+    alias bb="brew bundle"
+  ;;
+  linux*)
+    alias aup="sudo apt update"
+    alias aug="sudo apt upgrade"
+    alias auau="sudo apt update && sudo apt upgrade"
+    alias al="apt list --installed"
+    alias ao="apt list --upgradable"
+    alias as="apt search"
+    alias af="apt show"
+    alias ai="sudo apt install"
+    alias au="sudo apt remove"
+    alias aa="sudo apt autoremove"
+    alias ac="sudo apt clean"
+  ;;
+esac
 
 #==============
 # python shortcuts

@@ -1,19 +1,13 @@
 #==============
 # xcad alias
 #==============
-# alias k="kubectl"
-# alias h="helm"
-# alias tf="terraform"
-# alias a="ansible"
-# alias ap="ansible-playbook"
-# alias dt="datree"
+alias a="ansible"
+alias ap="ansible-playbook"
 
 #==============
-# mac OS shortcuts
+# general shortcuts
 #==============
-alias vscode="open -a 'Visual Studio Code'"
 alias sudo='sudo '
-alias ofd='open $PWD'
 alias c="clear"
 alias h="history"
 alias r='source ~/.zshrc'
@@ -40,6 +34,8 @@ case "$OSTYPE" in
   darwin*)
     # macos specific aliases
     alias lsblk="diskutil list"
+    alias vscode="open -a 'Visual Studio Code'"
+    alias ofd='open $PWD'
   ;;
   linux*)
     # linux specific aliases
@@ -120,8 +116,10 @@ alias gst='git status'
 #==============
 # code shortcuts
 #==============
-alias m='make'
-alias mc='make clean'
+if [$(which make &> /dev/null) $? -eq 0 ]; then
+    alias m='make'
+    alias mc='make clean'
+fi
 
 #==============
 # update shortcuts

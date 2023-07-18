@@ -112,6 +112,10 @@ alias gcl='git clone --recurse-submodules'
 alias gp='git push'
 alias grh='git reset'
 alias gst='git status'
+alias gsh='git show'
+alias gs='git submodule '
+alias gla='for dir in */; do cd "$dir" && [[ -d .git ]] && git pull; cd ..; done'
+
 
 #==============
 # code shortcuts

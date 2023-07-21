@@ -1,14 +1,24 @@
+# general
+home /Users/jmetrikat
+code /Users/jmetrikat/Code
+
+# jmetrikat
 aoc /Users/jmetrikat/Code/jmetrikat/advent-of-code
-any /Users/jmetrikat/Code/local/anytype
-code /Users/jmetrikat/Code/jmetrikat
+personal /Users/jmetrikat/Code/jmetrikat
 dotfiles /Users/jmetrikat/Code/jmetrikat/dotfiles
 github-stats /Users/jmetrikat/Code/jmetrikat/github-stats
 infra /Users/jmetrikat/Code/jmetrikat/infra
 jmetrikat /Users/jmetrikat/Code/jmetrikat/jmetrikat
-home /Users/jmetrikat
 ltc /Users/jmetrikat/Code/jmetrikat/learn-to-code
 pt1 /Users/jmetrikat/Code/jmetrikat/pt1-ws22
 pt2 /Users/jmetrikat/Code/jmetrikat/pt2-ss23
 scripts /Users/jmetrikat/Code/jmetrikat/scripts
 clang /Users/jmetrikat/Code/jmetrikat/the-c-language
 vscode /Users/jmetrikat/Code/jmetrikat/vscode-config
+
+# anyproto
+anyproto /Users/jmetrikat/Code/anyproto
+any-swift /Users/jmetrikat/Code/anyproto/anytype-swift
+any-ts /Users/jmetrikat/Code/anyproto/anytype-ts
+any-heart /Users/jmetrikat/Code/anyproto/anytype-heart
+any-sync /Users/jmetrikat/Code/anyproto/any-sync

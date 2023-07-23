@@ -19,7 +19,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     # Set PATH, MANPATH, etc. for Homebrew
     eval "$(/opt/homebrew/bin/brew shellenv)"
 
-    # Set PATH for openjdk@11
+    # Set PATH for openjdk@20
     export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
     export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 

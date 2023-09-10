@@ -71,7 +71,6 @@ echo
 #==============
 cd ~
 brew bundle
-cd -
 rm ~/Brewfile.lock.json
 sleep .5
 

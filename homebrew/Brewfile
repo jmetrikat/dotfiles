@@ -18,7 +18,7 @@ cask_args appdir: "/Applications", require_sha: true
 brew "ansible"
 brew "cmake"
 brew "curl"
-brew "exa"
+brew "eza"
 brew "exiftool"
 brew "fish"
 brew "fzf"

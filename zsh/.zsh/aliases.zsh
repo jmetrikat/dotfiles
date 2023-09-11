@@ -14,12 +14,12 @@ alias r='source ~/.zshrc'
 alias g='goto'
 
 #==============
-# exa shortcuts
+# eza shortcuts
 #==============
-if [$(which exa &> /dev/null) $? -eq 0 ]; then
-    alias ls="exa --icons --group-directories-first"
-    alias la="exa --icons --group-directories-first -a"
-    alias ll="exa --icons --group-directories-first -hl"
+if [$(which eza &> /dev/null) $? -eq 0 ]; then
+    alias ls="eza --icons --group-directories-first"
+    alias la="eza --icons --group-directories-first -a"
+    alias ll="eza --icons --group-directories-first -hl"
     alias ld='ls -d */'
 fi
 

@@ -1,0 +1,25 @@
+---
+name: "Run Anytype Desktop from source"
+command: |-
+  goto any-ts
+  ./update.sh {{platform}} {{arch}}
+  goto any-ts
+  mv darwin-*/anytypeHelper dist/
+  npm run update:locale
+  SERVER_PORT=3000 ANYPROF=:6060 npm run start:dev
+tags:
+  - anytype
+  - typescript
+  - electron
+description: "This command runs Anytype Desktop from source"
+arguments:
+    - name: platform
+      description: Current platform
+      default_value: macos-latest
+    - name: arch
+      description: Current architecture
+      default_value: arm
+source_url: "https://github.com/jmetrikat/dotfiles"
+author: Jannis Metrikat
+author_url: "https://github.com/jmetrikat"
+shells: []

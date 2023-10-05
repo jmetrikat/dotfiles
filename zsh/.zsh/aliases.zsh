@@ -24,6 +24,15 @@ if [$(which eza &> /dev/null) $? -eq 0 ]; then
 fi
 
 #==============
+# nvim shortcuts
+#==============
+if [$(which nvim &> /dev/null) $? -eq 0 ]; then
+    alias vim="nvim"
+    alias vi="nvim"
+    alias v="nvim"
+fi
+
+#==============
 # system commands
 #==============
 alias grep='grep --color'
@@ -103,7 +112,9 @@ fi
 #==============
 # alias g='git'
 alias ga='git add'
+alias gb='git branch'
 alias gco='git checkout'
+alias gm='git merge'
 alias gcmsg='git commit -m'
 alias gd='git diff'
 alias glg='git log'

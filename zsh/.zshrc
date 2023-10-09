@@ -21,3 +21,6 @@ export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
 # Set PATH for curl
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+
+# Set PATH for go
+export PATH="$PATH:~/go/bin"

@@ -3,7 +3,7 @@ name: "Build Anytype Heart from source"
 command: |-
   brew install protobuf@{{protobuf-version}}
   brew link --overwrite protobuf@{{protobuf-version}}
-  goto anytype-heart
+  goto any-heart
   make setup-protoc
   make install-dev-js
 tags:
@@ -12,9 +12,9 @@ tags:
   - protobuf
 description: "This command builds Anytype Heart from source"
 arguments:
-    - name: protobuf-version
-      description: Current protobuf version
-      default_value: 3
+  - name: protobuf-version
+    description: Current protobuf version
+    default_value: 3
 source_url: "https://github.com/jmetrikat/dotfiles"
 author: Jannis Metrikat
 author_url: "https://github.com/jmetrikat"

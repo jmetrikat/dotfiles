@@ -23,4 +23,7 @@ export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
 # Set PATH for go
-export PATH="$PATH:~/go/bin"
+export GOPATH="$HOME/golang"
+export GOROOT="/opt/homebrew/Cellar/go/1.21.3/libexec"
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$GOROOT/bin"

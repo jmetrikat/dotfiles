@@ -36,6 +36,7 @@ brew "java"
 brew "jq"
 brew "lazydocker"
 brew "llvm"
+brew "mas"
 brew "md5deep"
 brew "media-info"
 brew "neovim"
@@ -72,6 +73,7 @@ cask "docker"
 cask "font-fira-code-nerd-font"
 cask "github"
 cask "gitkraken"
+cask "goland"
 cask "intellij-idea"
 cask "iterm2"
 cask "keepassxc"
@@ -94,19 +96,6 @@ cask "visual-studio-code"
 cask "warp"
 cask "zed"
 cask "zoom"
-
-#==============
-# Casks by Objective-See
-#==============
-# cask "blockblock"
-# cask "dhs"
-# cask "do-not-disturb"
-# cask "knockknock"
-# cask "lulu"
-# cask "netiquette"
-# cask "oversight"
-# cask "ransomwhere"
-# cask "reikey"
 
 #==============
 # App Store

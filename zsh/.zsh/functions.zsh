@@ -29,7 +29,7 @@ function tolower() {
 
 # Replace spaces with hyphens
 function todash() {
-  for f in *; do mv "$f" "$f.tmp"; mv "$f.tmp" "`echo $f | tr "[:upper:]" "[:lower:]" | tr " " "-"`"; done
+  for f in *; do mv "$f" "$f.tmp"; mv "$f.tmp" "`echo $f | tr "[:upper:]" "[:lower:]" | tr " " "-" | tr "_" "-"`"; done
 }
 
 # To lowercase and replace spaces with hyphens

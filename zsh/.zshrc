@@ -11,19 +11,35 @@ eval "$(starship init zsh)"
 # Load SSH identities on startup
 ssh-add -A 2>/dev/null;
 
-# Use tools installed by homebrew instead of OS defaults
-export PATH="/opt/homebrew/bin:$PATH"
+case "$OSTYPE" in
+  darwin*)
+    # Use tools installed by homebrew instead of OS defaults
+    export PATH="/opt/homebrew/bin:$PATH"
 
-# Set PATH and FLAGS for llvm
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+    # Set PATH and FLAGS for llvm
+    export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+    export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+    export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
-# Set PATH for curl
-export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+    # Set PATH for curl
+    export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
-# Set PATH for go
-export GOPATH="$HOME/golang"
-export GOROOT="/opt/homebrew/Cellar/go/1.21.3/libexec"
-export PATH="$PATH:$GOPATH/bin"
-export PATH="$PATH:$GOROOT/bin"
+    # Set PATH for go
+    export GOPATH="$HOME/golang"
+    export GOROOT="/opt/homebrew/Cellar/go/1.21.3/libexec"
+    export PATH="$PATH:$GOPATH/bin"
+    export PATH="$PATH:$GOROOT/bin"
+
+    # tmp
+    export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
+    export PATH="/opt/homebrew/opt/gawk/libexec/gnubin:$PATH"
+
+  ;;
+  linux*)
+    # Set PATH for go
+    export GOPATH="$HOME/go"
+    export GOROOT="/usr/local/go"
+    export PATH="$PATH:$GOPATH/bin"
+    export PATH="$PATH:$GOROOT/bin"
+  ;;
+esac

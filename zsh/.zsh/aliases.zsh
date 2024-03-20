@@ -140,4 +140,4 @@ fi
 # update shortcuts
 #==============
 alias global_update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g" # sudo gem update --system; sudo gem update; sudo gem cleanup
-alias pip_upgrade_all="pip --disable-pip-version-check list --outdated --format=json | python -c \"import json, sys; print('\n'.join([x['name'] for x in json.load(sys.stdin)]))\" | xargs -n1 pip3 install -U"
+alias pip_upgrade_all="pip3 --disable-pip-version-check list --outdated --format=json | python -c \"import json, sys; print('\n'.join([x['name'] for x in json.load(sys.stdin)]))\" | xargs -n1 pip3 install -U --break-system-packages"

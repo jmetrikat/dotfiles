@@ -6,6 +6,7 @@ command: |-
   goto any-ts
   mv darwin-*/anytypeHelper dist/
   npm run update:locale
+  npm rebuild keytar
   SERVER_PORT=3000 ANYPROF=:6060 npm run start:dev
 tags:
   - anytype

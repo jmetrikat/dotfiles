@@ -16,7 +16,7 @@ alias g='goto'
 #==============
 # eza shortcuts
 #==============
-if [$(which eza &> /dev/null) $? -eq 0 ]; then
+if [ $(which eza &> /dev/null) $? -eq 0 ]; then
     alias ls="eza --icons --group-directories-first"
     alias la="eza --icons --group-directories-first -a"
     alias ll="eza --icons --group-directories-first -hl"
@@ -26,7 +26,7 @@ fi
 #==============
 # nvim shortcuts
 #==============
-if [$(which nvim &> /dev/null) $? -eq 0 ]; then
+if [ $(which nvim &> /dev/null) $? -eq 0 ]; then
     alias vim="nvim"
     alias vi="nvim"
     alias v="nvim"
@@ -98,19 +98,18 @@ esac
 #==============
 # python shortcuts
 #==============
-if [$(which python3.11 &> /dev/null) $? -eq 0 ]; then
+if [ $(which python3.11 &> /dev/null) $? -eq 0 ]; then
     alias python="python3.11"
     alias py="python3.11"
 fi
 
-if [$(which pip3.11 &> /dev/null) $? -eq 0 ]; then
+if [ $(which pip3.11 &> /dev/null) $? -eq 0 ]; then
     alias pip="pip3.11"
 fi
 
 #==============
 # git shortcuts
 #==============
-# alias g='git'
 alias ga='git add'
 alias gb='git branch'
 alias gco='git checkout'
@@ -127,13 +126,26 @@ alias gsh='git show'
 alias gs='git submodule '
 alias gla='for dir in */; do cd "$dir" && [[ -d .git ]] && git pull; cd ..; done'
 
+#==============
+# npm shortcuts
+#==============
+alias ni='npm install'
+alias nr='npm run'
+alias nb='npm run build'
+alias nt='npm test'
+alias ns='npm start'
+alias nbs='npm run build && npm start'
 
 #==============
 # code shortcuts
 #==============
-if [$(which make &> /dev/null) $? -eq 0 ]; then
+if [ $(which make &> /dev/null) $? -eq 0 ]; then
     alias m='make'
     alias mc='make clean'
+fi
+if [ $(which gcc-13 &> /dev/null) $? -eq 0 ]; then
+    alias gcc='gcc-13'
+    alias g++='g++-13'
 fi
 
 #==============

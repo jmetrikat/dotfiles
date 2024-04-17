@@ -6,6 +6,7 @@ command: |-
   git config user.signingkey {{signingkey}}
   git config commit.gpgsign {{gpgsign}}
   git config core.hooksPath .githooks
+  echo ".DS_Store\n.idea\n.vscode" > .gitignore
   echo "repos:\n  - repo: https://github.com/zricethezav/gitleaks\n    rev: v8.18.0\n    hooks:\n      - id: gitleaks" > .pre-commit-config.yaml
   mkdir .githooks && echo '#!/usr/bin/env bash\n\nINSTALL_PYTHON=python3\nARGS=(hook-impl --config=.pre-commit-config.yaml --hook-type=pre-push)\n\nHERE="$(cd "$(dirname "$0")" && pwd)"\nARGS+=(--hook-dir "$HERE" -- "$@")\n\nif command -v pre-commit > /dev/null; then\n    exec pre-commit "${ARGS[@]}"\nelif [ -x "$INSTALL_PYTHON" ]; then\n    exec "$INSTALL_PYTHON" -mpre_commit "${ARGS[@]}"\nelse\n    echo "`pre-commit` not found, install via `brew install pre-commit`." 1>&2\n    exit 1\nfi' > .githooks/pre-push
   echo "[core]\n\thooksPath = .githooks\n[user]\n\temail = 120120832+jmetrikat@users.noreply.github.com\n\tname = Jannis Metrikat\n\tsigningkey = B223CAC5AAF85615\n[commit]\n\tgpgsign = true" > .gitconfig

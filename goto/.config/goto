@@ -4,12 +4,15 @@ code /Users/jmetrikat/Code
 
 # jmetrikat
 aoc /Users/jmetrikat/Code/jmetrikat/advent-of-code
-personal /Users/jmetrikat/Code/jmetrikat
+cp1 /Users/jmetrikat/Code/jmetrikat/comprog-ss24
+cv /Users/jmetrikat/Code/jmetrikat/curriculum-vitae
+dbs2 /Users/jmetrikat/Code/jmetrikat/dbs2-ss23
 dotfiles /Users/jmetrikat/Code/jmetrikat/dotfiles
-github-stats /Users/jmetrikat/Code/jmetrikat/github-stats
 infra /Users/jmetrikat/Code/jmetrikat/infra
-jmetrikat /Users/jmetrikat/Code/jmetrikat/jmetrikat
+jmetrikat /Users/jmetrikat/Code/jmetrikat
 ltc /Users/jmetrikat/Code/jmetrikat/learn-to-code
+ma3 /Users/jmetrikat/Code/jmetrikat/ma3-ws23
+pml /Users/jmetrikat/Code/jmetrikat/pml-ss24
 pt1 /Users/jmetrikat/Code/jmetrikat/pt1-ws22
 pt2 /Users/jmetrikat/Code/jmetrikat/pt2-ss23
 scripts /Users/jmetrikat/Code/jmetrikat/scripts
@@ -18,6 +21,7 @@ vscode /Users/jmetrikat/Code/jmetrikat/vscode-config
 
 # anyproto
 anyproto /Users/jmetrikat/Code/anyproto
+anybot /Users/jmetrikat/Code/anyproto/anybot
 any-swift /Users/jmetrikat/Code/anyproto/anytype-swift
 any-ts /Users/jmetrikat/Code/anyproto/anytype-ts
 any-heart /Users/jmetrikat/Code/anyproto/anytype-heart

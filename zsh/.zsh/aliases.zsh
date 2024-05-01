@@ -127,6 +127,22 @@ alias gs='git submodule '
 alias gla='for dir in */; do cd "$dir" && [[ -d .git ]] && git pull; cd ..; done'
 
 #==============
+# gh shortcuts
+#==============
+if [ $(which gh &> /dev/null) $? -eq 0 ]; then
+    alias ghc='gh repo clone'
+    alias ghl='gh pr list'
+    alias ghco='gh pr checkout'
+    alias ghcr='gh pr create'
+    alias ghcm='gh pr merge'
+    alias ghi='gh issue list'
+    alias ghic='gh issue create'
+    alias ghiv='gh issue view'
+    alias ghrv='gh repo view --web'
+    alias ghlogin='gh auth login'
+fi
+
+#==============
 # npm shortcuts
 #==============
 alias ni='npm install'
@@ -141,6 +157,7 @@ alias nbs='npm run build && npm start'
 #==============
 if [ $(which make &> /dev/null) $? -eq 0 ]; then
     alias m='make'
+    alias ma='make all'
     alias mc='make clean'
 fi
 if [ $(which gcc-13 &> /dev/null) $? -eq 0 ]; then

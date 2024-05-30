@@ -16,6 +16,7 @@ cask_args appdir: "/Applications", require_sha: true
 # Formulae
 #==============
 brew "ansible"
+brew "asitop"
 brew "cmake"
 brew "curl"
 brew "eza"
@@ -38,6 +39,7 @@ brew "julia"
 brew "jq"
 brew "lazydocker"
 brew "llvm"
+brew "mactop"
 brew "mas"
 brew "md5deep"
 brew "media-info"

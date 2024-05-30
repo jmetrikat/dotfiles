@@ -27,6 +27,12 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
     export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
 
+    # opam configuration
+    [[ ! -r /Users/jmetrikat/.opam/opam-init/init.zsh ]] || source /Users/jmetrikat/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+    # Set default docker platform
+    export DOCKER_DEFAULT_PLATFORM=linux/arm64
+
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
 
 fi

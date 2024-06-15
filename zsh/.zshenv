@@ -33,6 +33,12 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     # Set default docker platform
     export DOCKER_DEFAULT_PLATFORM=linux/arm64
 
+    # Set PATH for hugot
+    export PATH="$HOME/.local/bin:$PATH"
+
+    # Set PATH for coreutils
+    export PATH="$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin:$PATH"
+
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
 
 fi

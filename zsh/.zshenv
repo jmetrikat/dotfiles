@@ -36,9 +36,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     # Set PATH for hugot
     export PATH="$HOME/.local/bin:$PATH"
 
-    # Set PATH for coreutils
-    export PATH="$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin:$PATH"
-
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
 
 fi

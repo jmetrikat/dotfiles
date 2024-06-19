@@ -26,7 +26,7 @@ case "$OSTYPE" in
 
     # Set PATH for go
     export GOPATH="$HOME/golang"
-    export GOROOT="/opt/homebrew/Cellar/go/1.21.3/libexec"
+    export GOROOT="/opt/homebrew/Cellar/go/1.22.4/libexec"
     export PATH="$PATH:$GOPATH/bin"
     export PATH="$PATH:$GOROOT/bin"
 
@@ -34,6 +34,8 @@ case "$OSTYPE" in
     export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
     export PATH="/opt/homebrew/opt/gawk/libexec/gnubin:$PATH"
 
+    # Set PATH for coreutils
+    export PATH="$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin:$PATH"
   ;;
   linux*)
     # Set PATH for go

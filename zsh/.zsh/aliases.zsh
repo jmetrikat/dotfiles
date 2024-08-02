@@ -98,13 +98,15 @@ esac
 #==============
 # python shortcuts
 #==============
-if [ $(which python3.11 &> /dev/null) $? -eq 0 ]; then
-    alias python="python3.11"
-    alias py="python3.11"
+if [ $(which python3.12 &> /dev/null) $? -eq 0 ]; then
+    alias python="python3.12"
+    alias py="python3.12"
+    alias pyv="python ../validator.py"
+    alias pys="python ../setup.py"
 fi
 
-if [ $(which pip3.11 &> /dev/null) $? -eq 0 ]; then
-    alias pip="pip3.11"
+if [ $(which pip3.12 &> /dev/null) $? -eq 0 ]; then
+    alias pip="pip3.12"
 fi
 
 #==============
@@ -127,7 +129,7 @@ alias gs='git submodule '
 alias gla='for dir in */; do cd "$dir" && [[ -d .git ]] && git pull; cd ..; done'
 
 #==============
-# gh shortcuts
+# github shortcuts
 #==============
 if [ $(which gh &> /dev/null) $? -eq 0 ]; then
     alias ghc='gh repo clone'
@@ -160,9 +162,9 @@ if [ $(which make &> /dev/null) $? -eq 0 ]; then
     alias ma='make all'
     alias mc='make clean'
 fi
-if [ $(which gcc-13 &> /dev/null) $? -eq 0 ]; then
-    alias gcc='gcc-13'
-    alias g++='g++-13'
+if [ $(which gcc-14 &> /dev/null) $? -eq 0 ]; then
+    alias gcc='gcc-14'
+    alias g++='g++-14'
 fi
 
 #==============

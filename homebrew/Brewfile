@@ -17,6 +17,7 @@ cask_args appdir: "/Applications", require_sha: true
 #==============
 brew "ansible"
 brew "asitop"
+brew "basictex
 brew "cmake"
 brew "curl"
 brew "eza"
@@ -49,6 +50,7 @@ brew "npm"
 brew "nvm"
 brew "ocaml"
 brew "opam"
+brew "pipx"
 brew "python"
 brew "neofetch"
 brew "pinentry-mac"

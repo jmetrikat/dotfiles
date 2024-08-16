@@ -3,7 +3,7 @@ name: "Execute a command in each subdirectory"
 command: |-
   for dir in */; do [ -d "$dir" ] && (cd "$dir" && {{command}}); done
 tags:
-  - git
+  - shell
 description: "This command executes a specified command in each subdirectory of the current directory"
 arguments:
   - name: command

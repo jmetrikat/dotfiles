@@ -3,7 +3,7 @@ name: "Create a symbolic link to OpenJDK"
 command: |-
   sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 tags:
-  - git
+  - openjdk
 description: "This command creates a symbolic link to the OpenJDK installation directory"
 source_url: "https://github.com/jmetrikat/dotfiles"
 author: Jannis Metrikat

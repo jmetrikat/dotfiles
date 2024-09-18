@@ -8,8 +8,6 @@ command: |-
   make install-dev-js
 tags:
   - anytype
-  - go
-  - protobuf
 description: "This command builds Anytype Heart from source"
 arguments:
   - name: protobuf-version

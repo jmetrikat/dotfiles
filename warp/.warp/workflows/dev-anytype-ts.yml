@@ -10,8 +10,6 @@ command: |-
   SERVER_PORT=3000 ANYPROF=:6060 npm run start:dev
 tags:
   - anytype
-  - typescript
-  - electron
 description: "This command runs Anytype Desktop from source"
 arguments:
     - name: platform

@@ -36,6 +36,9 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     # Set PATH for hugot
     export PATH="$HOME/.local/bin:$PATH"
 
+    # Set PATH for python
+    export PATH="$HOME/Library/Python/3.12/bin:$PATH"
+
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
 
 fi

@@ -26,7 +26,7 @@ case "$OSTYPE" in
 
     # Set PATH for go
     export GOPATH="$HOME/golang"
-    export GOROOT="/opt/homebrew/Cellar/go/$(go version | awk '{print $3}' | sed 's/go//')/libexec"
+    export GOROOT="/opt/homebrew/Cellar/go/$(brew info go | grep stable | awk '{print $4}')/libexec"
     export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 
     # tmp
@@ -51,3 +51,6 @@ case "$OSTYPE" in
     export PATH="$PATH:$GOROOT/bin"
   ;;
 esac
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jmetrikat/.cache/lm-studio/bin"

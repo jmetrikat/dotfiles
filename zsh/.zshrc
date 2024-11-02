@@ -26,7 +26,7 @@ case "$OSTYPE" in
 
     # Set PATH for go
     export GOPATH="$HOME/golang"
-    export GOROOT="/opt/homebrew/Cellar/go/$(brew info go | grep stable | awk '{print $4}')/libexec"
+     export GOROOT="/opt/homebrew/Cellar/go/1.23.3/libexec"
     export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 
     # tmp

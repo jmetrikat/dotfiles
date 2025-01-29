@@ -54,3 +54,6 @@ esac
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/jmetrikat/.cache/lm-studio/bin"
+
+# ray autocomplete setup
+RAY_AC_ZSH_SETUP_PATH=/Users/jmetrikat/Library/Caches/ray/autocomplete/zsh_setup && test -f $RAY_AC_ZSH_SETUP_PATH && source $RAY_AC_ZSH_SETUP_PATH;

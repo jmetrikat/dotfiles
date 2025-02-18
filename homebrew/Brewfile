@@ -6,6 +6,7 @@ tap "homebrew/autoupdate"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "yt-dlp/taps"
+tap "go-swagger/go-swagger"
 
 #==============
 # Set arguments for all installation commands
@@ -34,6 +35,7 @@ brew "gnupg"
 brew "go"
 brew "golangci-lint"
 brew "goto"
+brew "go-swagger"
 brew "htop"
 brew "imagemagick"
 brew "java"

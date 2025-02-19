@@ -153,6 +153,7 @@ alias nb='npm run build'
 alias nt='npm test'
 alias ns='npm start'
 alias nbs='npm run build && npm start'
+alias nbd='npm run build && npm run dev'
 
 #==============
 # code shortcuts

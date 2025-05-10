@@ -1,0 +1,18 @@
+---
+name: "Create Git Release Tag"
+command: |-
+  RELEASE="{{release-version}}"
+  git fetch -pP
+  git tag "$RELEASE"
+  git push --tags
+tags:
+  - git
+description: "Fetch remote updates, create a release tag, and push tags to origin"
+arguments:
+  - name: release-version
+    description: "Version string for the release tag (e.g. v1.0.0)"
+    default_value: v1.0.0
+source_url: "https://github.com/jmetrikat/dotfiles"
+author: Jannis Metrikat
+author_url: "https://github.com/jmetrikat"
+shells: []

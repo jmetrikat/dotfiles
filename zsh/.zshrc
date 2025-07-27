@@ -30,7 +30,7 @@ case "$OSTYPE" in
     export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 
     # tmp
-    export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
+    export PATH="/opt/homebrew/opt/node/bin:$PATH"
     export PATH="/opt/homebrew/opt/gawk/libexec/gnubin:$PATH"
 
     # Set PATH for coreutils
@@ -42,6 +42,18 @@ case "$OSTYPE" in
     PERL_LOCAL_LIB_ROOT="/Users/jmetrikat/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
     PERL_MB_OPT="--install_base \"/Users/jmetrikat/perl5\""; export PERL_MB_OPT;
     PERL_MM_OPT="INSTALL_BASE=/Users/jmetrikat/perl5"; export PERL_MM_OPT;
+    
+    # Added by LM Studio CLI (lms)
+    export PATH="$PATH:/Users/jmetrikat/.cache/lm-studio/bin"
+
+    # ray autocomplete setup
+    RAY_AC_ZSH_SETUP_PATH=/Users/jmetrikat/Library/Caches/ray/autocomplete/zsh_setup && test -f $RAY_AC_ZSH_SETUP_PATH && source $RAY_AC_ZSH_SETUP_PATH;
+
+    # Added by Windsurf
+    export PATH="/Users/jmetrikat/.codeium/windsurf/bin:$PATH"
+    
+    # Claude Code
+    alias claude="/Users/jmetrikat/.claude/local/claude"
   ;;
   linux*)
     # Set PATH for go
@@ -51,9 +63,3 @@ case "$OSTYPE" in
     export PATH="$PATH:$GOROOT/bin"
   ;;
 esac
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/jmetrikat/.cache/lm-studio/bin"
-
-# ray autocomplete setup
-RAY_AC_ZSH_SETUP_PATH=/Users/jmetrikat/Library/Caches/ray/autocomplete/zsh_setup && test -f $RAY_AC_ZSH_SETUP_PATH && source $RAY_AC_ZSH_SETUP_PATH;

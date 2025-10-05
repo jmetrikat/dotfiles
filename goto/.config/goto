@@ -4,6 +4,8 @@ code /Users/jmetrikat/Code
 
 # jmetrikat
 aoc /Users/jmetrikat/Code/jmetrikat/advent-of-code
+clang /Users/jmetrikat/Code/jmetrikat/the-c-language
+com /Users/jmetrikat/Code/jmetrikat/jmetrikat-com
 cp1 /Users/jmetrikat/Code/jmetrikat/comprog-ss24
 cv /Users/jmetrikat/Code/jmetrikat/curriculum-vitae
 dbs2 /Users/jmetrikat/Code/jmetrikat/dbs2-ss23
@@ -16,7 +18,7 @@ pml /Users/jmetrikat/Code/jmetrikat/pml-ss24
 pt1 /Users/jmetrikat/Code/jmetrikat/pt1-ws22
 pt2 /Users/jmetrikat/Code/jmetrikat/pt2-ss23
 scripts /Users/jmetrikat/Code/jmetrikat/scripts
-clang /Users/jmetrikat/Code/jmetrikat/the-c-language
+thesis /Users/jmetrikat/Code/jmetrikat/thesis
 vscode /Users/jmetrikat/Code/jmetrikat/vscode-config
 
 # anyproto

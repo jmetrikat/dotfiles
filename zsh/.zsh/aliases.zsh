@@ -162,6 +162,8 @@ if [ $(which make &> /dev/null) $? -eq 0 ]; then
     alias m='make'
     alias ma='make all'
     alias mc='make clean'
+    alias mf='make fmt'
+    alias mb='make build'
 fi
 if [ $(which gcc-14 &> /dev/null) $? -eq 0 ]; then
     alias gcc='gcc-14'

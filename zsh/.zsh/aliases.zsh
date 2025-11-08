@@ -28,8 +28,6 @@ fi
 #==============
 if [ $(which nvim &> /dev/null) $? -eq 0 ]; then
     alias vim="nvim"
-    alias vi="nvim"
-    alias v="nvim"
 fi
 
 #==============
@@ -142,18 +140,31 @@ if [ $(which gh &> /dev/null) $? -eq 0 ]; then
     alias ghiv='gh issue view'
     alias ghrv='gh repo view --web'
     alias ghlogin='gh auth login'
+    alias pr='gh pr create --fill'
+    alias prv='gh pr view --web'
 fi
 
 #==============
 # npm shortcuts
 #==============
-alias ni='npm install'
-alias nr='npm run'
-alias nb='npm run build'
-alias nt='npm test'
-alias ns='npm start'
-alias nbs='npm run build && npm start'
-alias nbd='npm run build && npm run dev'
+if [ $(which npm &> /dev/null) $? -eq 0 ]; then
+    alias ni='npm install'
+    alias nr='npm run'
+    alias nb='npm run build'
+    alias nt='npm test'
+    alias ns='npm start'
+    alias nbs='npm run build && npm start'
+    alias nbd='npm run build && npm run dev'
+fi
+
+#==============
+# dum shortcuts
+#==============
+if [ $(which dum &> /dev/null) $? -eq 0 ]; then
+    alias v='dum vet'
+    alias t='dum test'
+    alias d='dum dev'
+fi
 
 #==============
 # code shortcuts

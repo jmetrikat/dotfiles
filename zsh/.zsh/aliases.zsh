@@ -99,8 +99,6 @@ esac
 if [ $(which python3.12 &> /dev/null) $? -eq 0 ]; then
     alias python="python3.12"
     alias py="python3.12"
-    alias pyv="python ../validator.py"
-    alias pys="python ../setup.py"
 fi
 
 if [ $(which pip3.12 &> /dev/null) $? -eq 0 ]; then
@@ -116,8 +114,8 @@ alias gco='git checkout'
 alias gm='git merge'
 alias gcmsg='git commit -m'
 alias gd='git diff'
-alias glg='git log'
 alias gl='git pull'
+alias gg='git pull'
 alias gcl='git clone --recurse-submodules'
 alias gp='git push'
 alias grh='git reset'

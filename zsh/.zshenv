@@ -36,6 +36,9 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     # Set PATH for hugot
     export PATH="$HOME/.local/bin:$PATH"
 
+    # Gemini CLI through Google Cloud
+    export GOOGLE_CLOUD_PROJECT="pelagic-cocoa-464111-f5"
+
     # Set PATH for python
     export PATH="$HOME/Library/Python/3.12/bin:$PATH"
 

@@ -75,6 +75,16 @@ rm ~/Brewfile.lock.json
 sleep .5
 
 #==============
+# Install LaTeX packages
+#==============
+sudo tlmgr update --self
+sudo tlmgr install latexmk
+sudo tlmgr install datetime
+sudo tlmgr install fmtcount
+sudo tlmgr install enumitem
+sudo tlmgr install adjustbox
+
+#==============
 # Done
 #==============
 echo "\n====== All Done ======"

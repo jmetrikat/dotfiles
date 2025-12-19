@@ -16,6 +16,7 @@ cask_args appdir: "/Applications", require_sha: true
 # Formulae
 #==============
 brew "asitop"
+brew "basictex"
 brew "cmake"
 brew "curl"
 brew "eza"

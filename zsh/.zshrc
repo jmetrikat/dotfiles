@@ -26,7 +26,7 @@ case "$OSTYPE" in
 
     # Set PATH for go
     export GOPATH="$HOME/golang"
-     export GOROOT="/opt/homebrew/Cellar/go/1.23.3/libexec"
+    export GOROOT="/opt/homebrew/Cellar/go/1.23.3/libexec"
     export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 
     # tmp
@@ -54,6 +54,9 @@ case "$OSTYPE" in
     
     # Claude Code
     alias claude="/Users/jmetrikat/.claude/local/claude"
+
+    # zsh-z
+    source /Users/jmetrikat/Code/local/zsh-z/zsh-z.plugin.zsh
   ;;
   linux*)
     # Set PATH for go
@@ -63,3 +66,6 @@ case "$OSTYPE" in
     export PATH="$PATH:$GOROOT/bin"
   ;;
 esac
+
+eval "$(mise activate zsh)"
+eval "$(atuin init zsh)"

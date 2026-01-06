@@ -42,7 +42,7 @@ case "$OSTYPE" in
     PERL_LOCAL_LIB_ROOT="/Users/jmetrikat/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
     PERL_MB_OPT="--install_base \"/Users/jmetrikat/perl5\""; export PERL_MB_OPT;
     PERL_MM_OPT="INSTALL_BASE=/Users/jmetrikat/perl5"; export PERL_MM_OPT;
-    
+
     # Added by LM Studio CLI (lms)
     export PATH="$PATH:/Users/jmetrikat/.cache/lm-studio/bin"
 
@@ -51,7 +51,7 @@ case "$OSTYPE" in
 
     # Added by Windsurf
     export PATH="/Users/jmetrikat/.codeium/windsurf/bin:$PATH"
-    
+
     # Claude Code
     alias claude="/Users/jmetrikat/.claude/local/claude"
 
@@ -67,5 +67,7 @@ case "$OSTYPE" in
   ;;
 esac
 
-eval "$(mise activate zsh)"
-eval "$(atuin init zsh)"
+if [[ "$(hostname)" == "MacBook-Pro-telli" ]]; then
+  eval "$(mise activate zsh)"
+  eval "$(atuin init zsh)"
+fi

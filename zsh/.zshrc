@@ -52,9 +52,6 @@ case "$OSTYPE" in
     # Added by Windsurf
     export PATH="/Users/jmetrikat/.codeium/windsurf/bin:$PATH"
 
-    # Claude Code
-    alias claude="/Users/jmetrikat/.claude/local/claude"
-
     # zsh-z
     source /Users/jmetrikat/Code/local/zsh-z/zsh-z.plugin.zsh
   ;;

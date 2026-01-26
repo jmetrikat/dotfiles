@@ -40,7 +40,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     export GOOGLE_CLOUD_PROJECT="pelagic-cocoa-464111-f5"
 
     # Set PATH for python
-    export PATH="$HOME/Library/Python/3.12/bin:$PATH"
+    export PATH="$HOME/Library/Python/3.14/bin:$PATH"
 
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
 

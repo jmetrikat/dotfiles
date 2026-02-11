@@ -122,6 +122,7 @@ alias grh='git reset'
 alias gst='git status'
 alias gsh='git show'
 alias gs='git submodule '
+alias gsm='git pull origin main'
 alias gla='for dir in */; do cd "$dir" && [[ -d .git ]] && git pull; cd ..; done'
 
 #==============
@@ -162,6 +163,7 @@ if [ $(which dum &> /dev/null) $? -eq 0 ]; then
     alias v='dum vet'
     alias t='dum test'
     alias d='dum dev'
+    alias ca='dum codegen:all'
 fi
 
 #==============

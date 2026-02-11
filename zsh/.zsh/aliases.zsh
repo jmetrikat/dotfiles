@@ -161,6 +161,7 @@ fi
 #==============
 if [ $(which dum &> /dev/null) $? -eq 0 ]; then
     alias v='dum vet'
+    alias l='dum lint'
     alias t='dum test'
     alias d='dum dev'
     alias ca='dum codegen:all'

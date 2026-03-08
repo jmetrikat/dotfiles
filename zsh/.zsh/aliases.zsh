@@ -164,7 +164,9 @@ if [ $(which dum &> /dev/null) $? -eq 0 ]; then
     alias l='dum lint'
     alias t='dum test'
     alias d='dum dev'
+    alias i='dum i18n'
     alias o='dum opencode'
+    alias ci='dum ci'
     alias ca='dum codegen:all'
 fi
 

@@ -157,17 +157,17 @@ if [ $(which npm &> /dev/null) $? -eq 0 ]; then
 fi
 
 #==============
-# dum shortcuts
+# bun shortcuts
 #==============
-if [ $(which dum &> /dev/null) $? -eq 0 ]; then
-    alias v='dum vet'
-    alias l='dum lint'
-    alias t='dum test'
-    alias d='dum dev'
-    alias i='dum i18n'
-    alias o='dum opencode'
-    alias ci='dum ci'
-    alias ca='dum codegen:all'
+if [ $(which bun &> /dev/null) $? -eq 0 ]; then
+    alias v='bun vet'
+    alias l='bun lint'
+    alias t='bun test'
+    alias d='bun dev'
+    alias i='bun i18n'
+    alias o='bun opencode'
+    alias ci='bun ci'
+    alias ca='bun codegen:all'
 fi
 
 #==============

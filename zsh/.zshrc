@@ -30,7 +30,6 @@ case "$OSTYPE" in
     export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 
     # tmp
-    export PATH="/opt/homebrew/opt/node/bin:$PATH"
     export PATH="/opt/homebrew/opt/gawk/libexec/gnubin:$PATH"
 
     # Set PATH for coreutils
@@ -65,6 +64,9 @@ case "$OSTYPE" in
 esac
 
 if [[ "$(hostname)" == "MacBook-Pro-telli" ]]; then
-  eval "$(mise activate zsh)"
   eval "$(atuin init zsh)"
 fi
+
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+
+eval "$(mise activate zsh)"

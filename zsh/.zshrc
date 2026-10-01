@@ -57,7 +57,7 @@ case "$OSTYPE" in
   ;;
 esac
 
-if [[ "$(hostname)" == "MacBook-Pro-telli" ]]; then
+if (( $+commands[atuin] )); then
   eval "$(atuin init zsh)"
 fi
 

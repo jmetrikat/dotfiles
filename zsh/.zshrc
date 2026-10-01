@@ -42,14 +42,8 @@ case "$OSTYPE" in
     PERL_MB_OPT="--install_base \"/Users/jmetrikat/perl5\""; export PERL_MB_OPT;
     PERL_MM_OPT="INSTALL_BASE=/Users/jmetrikat/perl5"; export PERL_MM_OPT;
 
-    # Added by LM Studio CLI (lms)
-    export PATH="$PATH:/Users/jmetrikat/.cache/lm-studio/bin"
-
     # ray autocomplete setup
     RAY_AC_ZSH_SETUP_PATH=/Users/jmetrikat/Library/Caches/ray/autocomplete/zsh_setup && test -f $RAY_AC_ZSH_SETUP_PATH && source $RAY_AC_ZSH_SETUP_PATH;
-
-    # Added by Windsurf
-    export PATH="/Users/jmetrikat/.codeium/windsurf/bin:$PATH"
 
     # zsh-z
     source /Users/jmetrikat/Code/local/zsh-z/zsh-z.plugin.zsh

@@ -39,8 +39,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     # Gemini CLI through Google Cloud
     export GOOGLE_CLOUD_PROJECT="pelagic-cocoa-464111-f5"
 
-    # Set PATH for python
-    export PATH="$HOME/Library/Python/3.14/bin:$PATH"
+    # User-installed scripts for whichever Python `python3` currently is
+    _p="$(python3 -c 'import site; print(site.USER_BASE+"/bin")' 2>/dev/null)" && [[ -d $_p ]] && PATH="$_p:$PATH"; unset _p
 
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
 

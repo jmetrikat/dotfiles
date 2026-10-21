@@ -96,13 +96,13 @@ esac
 #==============
 # python shortcuts
 #==============
-if [ $(which python3.12 &> /dev/null) $? -eq 0 ]; then
-    alias python="python3.12"
-    alias py="python3.12"
+if command -v python3 >/dev/null 2>&1; then
+    alias python="python3"
+    alias py="python3"
 fi
 
-if [ $(which pip3.12 &> /dev/null) $? -eq 0 ]; then
-    alias pip="pip3.12"
+if command -v pip3 >/dev/null 2>&1; then
+    alias pip="pip3"
 fi
 
 #==============
